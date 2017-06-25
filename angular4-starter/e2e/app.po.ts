@@ -1,6 +1,6 @@
-import { browser, element, by } from 'protractor';
+import { browser, by, element } from 'protractor';
 
-export class AngularStarterPage {
+export class Angular4StarterPage {
   navigateTo() {
     return browser.get('/');
   }
