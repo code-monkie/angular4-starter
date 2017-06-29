@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
-import { AuthModule } from './auth/auth.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
@@ -20,8 +19,7 @@ import { ConstantsService } from './constants.service';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
-    AuthModule
+    AppRoutingModule
   ],
   providers: [AuthService, ConstantsService],
   bootstrap: [AppComponent]

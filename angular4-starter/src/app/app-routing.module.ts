@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 const appRoutes : Routes = [
   { path: "", component: DashboardComponent, pathMatch: 'full'},
   { path: "dashboard", component: DashboardComponent},
+  { path: "auth", loadChildren: "./auth/auth.module#AuthModule"},
 ];
 
 @NgModule({
