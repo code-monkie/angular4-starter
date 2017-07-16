@@ -9,16 +9,16 @@ import { ConstantsService } from './constants.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'app';
 
-  constructor(private constantService: ConstantsService) {
+  public constructor(private constantService: ConstantsService) {
 
   }
 
-  ngOnInit(){
+  public ngOnInit(){
     firebase.initializeApp({
       apiKey: this.constantService.getFirebaseApiKey(),
       authDomain: this.constantService.getFirebaseAuthDomain(),
+      databaseURL: this.constantService.getFirebaseDatabaseUrl()
     });
   }
 }

@@ -9,15 +9,15 @@ export class ConstantsService {
 
   constructor() { }
 
-  getFirebaseApiKey() {
+  public getFirebaseApiKey() {
     return apiKey;
   }
 
-  getFirebaseAuthDomain() {
+  public getFirebaseAuthDomain() {
     return authDomain;
   }
 
-  getFirebaseDatabaseUrl() {
+  public getFirebaseDatabaseUrl() {
     return databaseUrl;
   }
 
