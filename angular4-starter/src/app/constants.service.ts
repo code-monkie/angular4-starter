@@ -1,7 +1,8 @@
 import { Injectable } from '@angular/core';
 
-const apiKey: String  = "";
-const authDomain: String = "";
+const apiKey: string  = "";
+const authDomain: string = "";
+const databaseUrl: string = "";
 
 @Injectable()
 export class ConstantsService {
@@ -14,6 +15,10 @@ export class ConstantsService {
 
   getFirebaseAuthDomain() {
     return authDomain;
+  }
+
+  getFirebaseDatabaseUrl() {
+    return databaseUrl;
   }
 
 }

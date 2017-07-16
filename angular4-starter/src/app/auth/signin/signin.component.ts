@@ -20,5 +20,4 @@ export class SigninComponent implements OnInit {
     const password = form.value.password;
     this.authService.signinUser(email, password);
   }
-
 }
